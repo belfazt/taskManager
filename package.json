@@ -10,12 +10,12 @@
     "node-uuid": "^1.4.7"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "./node_modules/mocha/bin/mocha"
+    "start": "node server.js",
+    "test": "./node_modules/mocha/bin/mocha -R nyan"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5",
-    "request": "^2.72.0"
+    "supertest": "^1.2.0"
   }
 }

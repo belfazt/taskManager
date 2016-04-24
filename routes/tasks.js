@@ -50,6 +50,7 @@ exports.addTask = function(req, res) {
 exports.updateTask = function(req, res) {
     var id = req.params.id;
     var updatedValues = req.body;
+    console.log('Modifying task ' + id + ' with info ' + JSON.stringify(updatedValues));
     Task.findById(id, function(err, task) {
       if (err) {
         console.log(err);
