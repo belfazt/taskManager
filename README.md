@@ -5,7 +5,7 @@ Micro Service to Manage Tasks
 
 ###Prerequisites
 - [Git](https://git-scm.com/)
-- [Node.js and npm](nodejs.org) Node ^4.2.3, npm ^2.14.7
+- [Node.js and npm](https://nodejs.org) Node ^4.2.3, npm ^2.14.7
 - [MongoDB](https://www.mongodb.org/) - Keep a running daemon with `mongod`
 
 ##Developing
