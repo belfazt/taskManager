@@ -46,7 +46,7 @@ describe('testing API', function() {
       .expect(200, done);
   });
 
-  it('DELET /tasks/myAwesomeId', function deleteMyAwesomeTask(done) {
+  it('DELETE /tasks/myAwesomeId', function deleteMyAwesomeTask(done) {
     request(server)
       .delete('/tasks/myAwesomeId')
       .expect('Content-Type', /json/)
