@@ -14,5 +14,4 @@ app.post('/tasks', task.addTask);
 app.put('/tasks/:id', task.updateTask);
 app.delete('/tasks/:id', task.deleteTask);
 
-app.listen(3000);
-console.log('Listening on port 3000...');
+exports.app = app;

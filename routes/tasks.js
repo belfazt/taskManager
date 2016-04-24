@@ -1,6 +1,7 @@
 'use strict'
 
 var Task = require('../models/task').Task;
+var uuid = require('node-uuid');
 
 exports.findById = function(req, res) {
     var id = req.params.id;
@@ -29,6 +30,12 @@ exports.findAll = function(req, res) {
 exports.addTask = function(req, res) {
     var task = req.body;    
     console.log('Adding task: ' + JSON.stringify(task));
+    if (task._id == undefined) {
+    	task._id = uuid.v4();
+    }
+    if (task.reminder && task.reminderDate == undefined) {
+    	task.reminderDate = Date.now + 86400000
+    }
     Task.create(task, function(err, task) {
     	if (err) {
     		console.log(err);
