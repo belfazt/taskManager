@@ -1,0 +1,11 @@
+{
+  "name": "tasks-microservice",
+  "description": "Tasks Micro Service",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.13"
+  }
+}
